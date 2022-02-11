@@ -1,0 +1,582 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #131b21;
+    background-image: url('/img/back.png');
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+}
+
+.topnav:hover{
+  background-color: #c5f1fa30;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #223e6d;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:#223e6d;
+  color: white;
+}
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    width: inherit;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+.alert {
+  padding: 20px;
+  background-color: #223e6d;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.back{
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.avatar img {
+    width: 64%;
+    border-radius: 34%;
+    border: 8px solid red;
+}
+.avatar img:hover {
+    width: 64%;
+    border-radius: 34%;
+    border: 8px solid orange;
+}
+.img:hover{
+  background-clip: url('img/avatar2.png');
+}
+.title {
+  color: #3b4a54;
+  font-size: 18px;
+}
+.hello{
+  color: blue;
+}
+.hello:hover{
+  color: #e6007e6e;
+}
+.hello2{
+  color: red;
+}
+
+.hello2:hover {
+  color:yellow;
+}
+.data{
+  color: gray;
+}
+.info{
+  color: #94700e;
+}
+#panel, #toggle {
+  padding: 5px;
+  text-align: center;
+}
+#toggle:hover{
+color: white;
+}
+#panel {
+    padding: 50px;
+    background-color: #91939370;
+    display: none;
+    border-radius: 15%;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #785e12;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+#snow{
+background: none;
+font-family: Androgyne;
+background-image:url('https://ccasset.azureedge.net/3813/snow-one.png'), url('https://ccasset.azureedge.net/3813/snow-two.png'), url('https://ccasset.azureedge.net/3813/snow-three.png');
+height: 150%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+z-index:1;
+-webkit-animation: snow 10s linear infinite;
+-moz-animation: snow 10s linear infinite;
+-ms-animation: snow 10s linear infinite;
+animation: snow 14s linear infinite;
+}
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+.skills{
+  background-color: #223d6d63;
+  border-radius: 30%;
+  height: 25%;
+  
+}
+.skills:hover{
+  background-color: rgba(59, 50, 50, 0.384);
+}
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: gray;
+  text-align: center;
+  color: white;
+}
+.bar-container:hover{
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+.bar-5{width: 99%; height: 18px;}
+.bar-4 {width: 65%; height: 18px;}
+.bar-3 {width: 99%; height: 18px;}
+.bar-2 {width: 25%; height: 18px;}
+.bar-1 {width: 20%; height: 18px;;
+}
+/* Individual bars */
+.bar-5:hover {width: 99%; height: 18px; background-color: rgb(209, 122, 40);}
+.bar-4:hover {width: 65%; height: 18px; background-color: rgb(223, 190, 2);}
+.bar-3:hover {width: 99%; height: 18px; background-color: #1955af;}
+.bar-2:hover {width: 25%; height: 18px; background-color: #547fa7;}
+.bar-1:hover {width: 20%; height: 18px; background: linear-gradient(110deg, #e7d108 60%, #1e7dbd 60%);
+}
+
+.text{
+  color: rgb(134, 127, 127);
+}
+.rate{
+  color: lightblue;
+  width: 30%;
+}
+#plans {
+    background: url('img/2.png');
+    border-radius: 24%;
+}
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #dcaa9a94;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #606c94;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+    background-color: #f44336;
+    padding: 33px 120px;
+    color: white;
+    width: 82%;
+    border-radius: 36%;
+    text-align: center; 
+    background: url('/img/backk.gif');
+}
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+#projects{
+  border-radius: 27%;
+  background: url('img/skills.jpg');
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: auto;
+    max-height: 31%;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 404px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+ .project-header{
+   background-color: #65314c96;
+    padding: 33px 120px;
+    color: white;
+    width: 82%;
+    border-radius: 36%;
+    text-align: center; 
+ }
+
+.flip-card {
+    background-color: transparent;
+    width: 305px;
+    height: 303px;
+    perspective: 1000px;
+    padding-left: 469px;
+    padding-block: 9%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.s-header{
+      background-color: #004efd47;
+    padding: 33px 120px;
+    color: white;
+    width: 82%;
+    border-radius: 36%;
+    text-align: center; 
+}
+.fot {
+    padding: 5%;
+    padding-block: 2%;
+}
